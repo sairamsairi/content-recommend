@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9fafb;
+  margin: 0;
+  padding: 0;
+}
+.App {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.controls {
+  margin-bottom: 20px;
+}
+.category-btn, .tag {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.category-btn.selected, .tag.selected {
+  background-color: #6366f1;
+  color: white;
+}
+.recommendations {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.content-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card-img {
+  padding: 20px;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.match-score {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  color: green;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+.card-body {
+  padding: 15px;
+}
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.card-tag {
+  background: #e2e8f0;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
